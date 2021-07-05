@@ -1,0 +1,123 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:#2f2f2f;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#2f2f2f;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+}
+header {
+    padding: 10px 0;
+    box-shadow: 0 1px 10px 1px rgb(2 183 117 / 10%);
+    border-bottom: 3px solid #02b775;
+}
+.ds-inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo img {
+    max-width: 80px;
+}
+.creator {
+    color: #02b775;
+    font-family: 'ArialRoundedMT';
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.nav-menu {
+    width: calc(100% - 240px);
+    text-align: right;
+}
+.main-menu .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+}
+.main-menu li:hover a,
+.main-menu li.active a {
+    color:#02b775;
+}
+.menu-item:before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left:0;
+    margin: auto;
+    background-color: #02b775;
+    bottom: 5px;
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+}
+.menu-item:hover:before,
+.menu-item.active:before {
+    width: 100%;
+}
+.button {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 20px 40px;
+    box-shadow: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-family: 'ArialRoundedMT';
+    font-size: 18px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    cursor: pointer;
+}
+.button.primary{
+    border: 2px solid #0069ff;
+    background-color: #fff;
+    color: #0069ff;
+}
+.button.primary:hover{
+    background-color: #0069ff;
+    color: #fff;
+}
+.section {
+    padding: 60px 0;
+}
+.device-locator-wrapper {
+    background-color: #f3f8fa;
+    height: 60vh;
+    text-align: center;
+}
+#check-location {
+    margin-bottom: 10px;
+}
+h1.headline {
+    font-size: 46px;
+}
+.headline {
+    color:#2f2f2f;
+}
+.device-locator-wrapper .headline {
+    margin-bottom: 40px;
+}
