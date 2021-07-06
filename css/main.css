@@ -23,6 +23,7 @@ a{
 .container {
     max-width: 1024px;
     margin: auto;
+    padding: 0 10px;
     position: relative;
 }
 header {
@@ -102,23 +103,36 @@ header {
     background-color: #0069ff;
     color: #fff;
 }
-.section {
-    padding: 60px 0;
-}
-.device-locator-wrapper {
-    background-color: #f3f8fa;
-    height: 60vh;
-    text-align: center;
-}
-#check-location {
-    margin-bottom: 10px;
-}
 h1.headline {
     font-size: 46px;
 }
 .headline {
     color:#2f2f2f;
 }
+
+
+.section {
+    padding: 120px 0;
+}
+.device-locator-wrapper {
+    background-color: #f3f8fa;
+    text-align: center;
+}
+#check-location {
+    margin-bottom: 10px;
+}
 .device-locator-wrapper .headline {
     margin-bottom: 40px;
 }
+.location-details span {
+    display: block;
+    text-align: left;
+}
+.display-location {
+    max-width: 250px;
+    margin: 10px auto;
+}
+.sm-block{
+    display: none;
+}
+

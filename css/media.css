@@ -1,0 +1,98 @@
+
+@media only screen and (max-width:1023px){
+    .logo img {
+        max-width: 60px;
+    }
+    .main-menu {
+        font-size: 14px;
+    }
+    .creator{
+        font-size: 20px;
+    }
+    .nav-menu {
+        width: calc(100% - 200px);
+    }
+    .section {
+       padding: 80px 0;
+    }
+    h1.headline {
+        font-size: 38px;
+    }
+    .button {
+        padding: 15px 40px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .section {
+        padding: 60px 0;
+    }
+    .creator {
+        font-size: 18px;
+    }
+    h1.headline {
+        font-size: 24px;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 73px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+        text-align: left;
+        box-shadow: 0 1px 10px 1px rgb(0 0 0 / 20%);
+        transition: 0.5s;
+        overflow: hidden;
+        height: 0;
+        visibility: hidden;
+    }
+    .nav-menu.menu-toggled {
+        visibility: visible;
+        height: 164px;
+    }
+    .main-menu .menu-item {
+        display: block;
+    }
+    .main-menu li:hover,
+    .menu-item.active {
+        background-color: #02b775;
+    }
+    .main-menu li:hover a, .main-menu li.active a{
+        color:#fff;
+    }
+    .menu-item:before{
+        right: auto;
+    }
+    .sm-block{
+        display: block;
+    }
+    .menu-button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .menu-strip {
+        height: 2px;
+        width: 25px;
+        background-color: #2f2f2f;
+        display: block;
+        margin: 4px 0px;
+        transition:0.5s;
+        -webkit-transition:0.5s;
+        -moz-transition:0.5s;
+    }
+    .menu-button.toggled .menu-strip:last-child {
+        display: none;
+    }
+    .menu-button.toggled .menu-strip:first-child {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+    }
+    .menu-button.toggled .menu-strip:nth-child(2) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(45deg);
+    }
+}
